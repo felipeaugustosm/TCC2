@@ -22,3 +22,5 @@ for pastas in glob.glob('C:/Users/felip/Documents/TCC2/Metricas/*'):      #isso 
             writer = csv.writer(writeFile, lineterminator='\n')
             writer.writerows(linhas)
             writeFile.close()
+
+        arquivo.close()
