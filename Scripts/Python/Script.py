@@ -31,6 +31,6 @@ for pastas in glob.glob('C:/Users/felip/Documents/TCC2/Metricas/*'):      #isso 
                     writeFile.close()
             else:
                 with open('C:/Users/felip/Documents/TCC2/Resultados-v1.csv', 'a') as writeFile:
-                    writer = csv.writer(writeFile, lineterminator='\n')
+                    writer = csv.writer(writeFile, lineterminator=']')
                     writer.writerows(linha)
                     writeFile.close()

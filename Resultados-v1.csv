@@ -1,0 +1,260 @@
+Navegadores,LOC (Média por pacote),LOC(rec)(Média por pacote),LOCp (Média por pacote),LOCp(rec) (Média por pacote),LOCt (Média por pacote),LOCt(rec) (Média por pacote)
+Brave,"2183,97919293821","5964,3203410475","2182,08007566204","5957,96041412911","1,89911727616646","6,35992691839221"
+Navegadores,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
+Brave,0,234131,789353,0,47184,5134012,3523936,3012,1647487,914489,2574
+Navegaores,AHF,AIF,CF,MHF,MIF,PF
+Brave,"82,83%","57,11%","0,28%","47,80%","41,13%","22,91%"
+Navegadores,CBO - Média,DIT – Média,LCOM – Média,NOC – Média,RFC – Média,WMC – Média
+Brave,"8,19057510061015","1,22380890562119","1,88822536674023","0,298974425548488","17,5727638582371","12,1679864987667"
+Navegadores,LOC (Média por pacote),LOC(rec)(Média por pacote),LOCp (Média por pacote),LOCp(rec) (Média por pacote),LOCt (Média por pacote),LOCt(rec) (Média por pacote)
+Chromium,3222,"59576,5",3222,"45049,5",0,14527
+Navegadores,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
+Chromium,676,20372,931392,0,32432,1672676,915900,32178,861635,697358,27388
+Navegadores,AHF,AIF,CF,MHF,MIF,PF
+Chromium,"83,26%","55,06%","0,25%","47,40%","40,93%","23,33%"
+Navegadores,CBO - Média,DIT – Média,LCOM – Média,NOC – Média,RFC – Média,WMC – Média
+Chromium,"8,38159080666967","1,23422712933754","1,9282334384858","0,296417305092384","17,7182289319513","12,2585624155025"
+Navegadores,LOC (Média por pacote),LOC(rec)(Média por pacote),LOCp (Média por pacote),LOCp(rec) (Média por pacote),LOCt (Média por pacote),LOCt(rec) (Média por pacote)
+Cliqz,"615,479452054795","1989,87671232877","595,520547945206","1909,90410958904","19,958904109589","79,972602739726"
+Navegadores,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
+Cliqz,1271,442,32752,625,11837,581519,43602,1550,62378,40319,1314
+Navegadores,AHF,AIF,CF,MHF,MIF,PF
+Cliqz,"76,35%","77,84%","3,87%","45,76%","14,84%","129,76%"
+Navegadores,CBO - Média,DIT – Média,LCOM – Média,NOC – Média,RFC – Média,WMC – Média
+Cliqz,"6,09393346379648","1,55968688845401","1,19960861056751","0,146771037181996","15,9138943248532","8,6986301369863"
+Navegadores,LOC (Média por pacote),LOC(rec)(Média por pacote),LOCp (Média por pacote),LOCp(rec) (Média por pacote),LOCt (Média por pacote),LOCt(rec) (Média por pacote)
+Ducky Browser,"484,831168831169","1694,09036144578","376,077922077922","1100,49397590361","108,753246753247","593,596385542169"
+Project,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
+project,214,0,0,31939,10374,76184,57916,16748,64892,49787,14644
+MOOD metrics,Sex, 23 ago 2019 12:42:04 BRT
+Project,AHF,AIF,CF,MHF,MIF,PF
+project,"100,00%","100,00%","100,00%","100,00%","100,00%","100,00%"
+
+Navegadores,CBO - Média,DIT – Média,LCOM – Média,NOC – Média,RFC – Média,WMC – Média
+Ducky Browser,0,0,0,0,0,0
+Navegadores,LOC (Média por pacote),LOC(rec)(Média por pacote),LOCp (Média por pacote),LOCp(rec) (Média por pacote),LOCt (Média por pacote),LOCt(rec) (Média por pacote)
+Fennec F-Droid,"671,699115044248","2216,8487394958","569,973451327434","1863,65546218487","101,725663716814","353,193277310924"
+Project,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
+project,233,132,38844,0,37271,83818,64407,11495,72211,58539,10750
+MOOD metrics,Qui, 22 ago 2019 23:52:18 BRT
+Project,AHF,AIF,CF,MHF,MIF,PF
+project,"62,25%","79,69%","6,53%","48,48%","19,14%","74,94%"
+
+Navegadores,CBO - Média,DIT – Média,LCOM – Média,NOC – Média,RFC – Média,WMC – Média
+Fennec F-Droid,"9,83617747440273","2,46206896551724","1,79180887372014","0,248275862068965","24,8427299703264","17,037542662116"
+Navegadores,LOC (Média por pacote),LOC(rec)(Média por pacote),LOCp (Média por pacote),LOCp(rec) (Média por pacote),LOCt (Média por pacote),LOCt(rec) (Média por pacote)
+Firefox,"1694,57751937985","8446,77142857143","1589,95736434109","7870,50357142857","104,62015503876","576,267857142857"
+Project,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
+project,1222,17040,427060,9023,28881,562817,410209,26992,407885,294417,24513
+MOOD metrics,Sex, 23 ago 2019 11:01:11 BRT
+Project,AHF,AIF,CF,MHF,MIF,PF
+project,"73,49%","28,48%","0,46%","44,47%","36,91%","27,47%"
+
+Navegadores,CBO - Média,DIT – Média,LCOM – Média,NOC – Média,RFC – Média,WMC – Média
+Firefox,"9,54184158970053","1,59894613583138","1,75426812202631","0,339285714285714","15,1839755639098","14,5465994962217"
+Navegadores,LOC (Média por pacote),LOC(rec)(Média por pacote),LOCp (Média por pacote),LOCp(rec) (Média por pacote),LOCt (Média por pacote),LOCt(rec) (Média por pacote)
+Firefox Focus,"457,943396226415","927,899371069182","421,163522012579","780,817610062893","36,7798742138365","147,081761006289"
+Navegadores,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
+Firefox Focus,576,2437,9233,14896,30069,101627,66965,8190,92520,64202,7569
+Navegadores,AHF,AIF,CF,MHF,MIF,PF
+Firefox Focus,"64,40%","75,49%","11,76%","41,32%","10,91%","103,32%"
+Navegadores,CBO - Média,DIT – Média,LCOM – Média,NOC – Média,RFC – Média,WMC – Média
+Firefox Focus,"4,38383838383838","1,47474747474747","1,65656565656566","0,252525252525252","24,4242424242424","10,0909090909091"
+Navegadores,LOC (Média por pacote),LOC(rec)(Média por pacote),LOCp (Média por pacote),LOCp(rec) (Média por pacote),LOCt (Média por pacote),LOCt(rec) (Média por pacote)
+Firefox Nightly,"555,666666666667","1619,37037037037","147,75","652,814814814815","407,875","966,518518518519"
+Lines of code metrics,Sex, 23 ago 2019 12:02:54 BRT,,,,,,,,,
+Package,LOC,LOC(rec),LOCp,LOCp(rec),LOCt,LOCt(rec),,,,,
+Project,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
+project,417,128,0,4338,609,17422,3546,9789,14314,3068,9546
+MOOD metrics,Sex, 23 ago 2019 12:04:05 BRT
+Project,AHF,AIF,CF,MHF,MIF,PF
+project,"100,00%","100,00%","100,00%","100,00%","100,00%","100,00%"
+
+Navegadores,CBO - Média,DIT – Média,LCOM – Média,NOC – Média,RFC – Média,WMC – Média
+Firefox Nightly,0,0,0,0,0,0
+Navegadores,LOC (Média por pacote),LOC(rec)(Média por pacote),LOCp (Média por pacote),LOCp(rec) (Média por pacote),LOCt (Média por pacote),LOCt(rec) (Média por pacote)
+FLOSS Browser,"525,4375","1322,40625","525,4375","1322,40625",0,0
+Navegadores,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
+project,33,0,8501,0,8428,66428,66052,0,16868,16712,0
+Navegadores,AHF,AIF,CF,MHF,MIF,PF
+FLOSS Browser,"91,53%","87,93%","18,32%","36,92%","0,62%","935,90%"
+Navegadores,CBO - Média,DIT – Média,LCOM – Média,NOC – Média,RFC – Média,WMC – Média
+FLOSS Browser,"7,26923076923077","2,74358974358974","2,03846153846154","0,025641025641026","26,0897435897436","14,8717948717949"
+Navegadores,LOC (Média por pacote),LOC(rec)(Média por pacote),LOCp (Média por pacote),LOCp(rec) (Média por pacote),LOCt (Média por pacote),LOCt(rec) (Média por pacote)
+IceCatMobile,"1533,10358565737","7781,92363636364","1426,8764940239","7200,17090909091","106,227091633466","581,752727272727"
+Project,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
+project,782,15907,382503,1500,26060,491065,358146,26663,352265,253635,24145
+MOOD metrics,Sex, 23 ago 2019 10:26:04 BRT
+Project,AHF,AIF,CF,MHF,MIF,PF
+project,"74,03%","29,79%","0,47%","43,52%","39,78%","27,67%"
+
+Navegadores,CBO - Média,DIT – Média,LCOM – Média,NOC – Média,RFC – Média,WMC – Média
+IceCatMobile,"9,32773631840796","1,64285714285714","1,73818407960199","0,364253393665158","14,5785846806255","13,9888059701493"
+Navegadores,LOC (Média por pacote),LOC(rec)(Média por pacote),LOCp (Média por pacote),LOCp(rec) (Média por pacote),LOCt (Média por pacote),LOCt(rec) (Média por pacote)
+Iridium Browser,"1640,25139664804","7705,71880819367","1580,5530726257","7519,62197392924","59,6983240223464","186,096834264432"
+Navegadores,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
+Iridium Browser,476,20363,872641,0,27854,1603918,856859,32058,811398,651373,27277
+Navegadores,AHF,AIF,CF,MHF,MIF,PF
+Iridium Browser,"83,48%","56,73%","0,27%","47,91%","39,74%","25,68%"
+Navegadores,CBO - Média,DIT – Média,LCOM – Média,NOC – Média,RFC – Média,WMC – Média
+Iridium Browser,"9,85639075753144","1,51673578199052","2,34074290728283","0,369964454976303","18,0948402948403","15,160427025446"
+Navegadores,LOC (Média por pacote),LOC(rec)(Média por pacote),LOCp (Média por pacote),LOCp(rec) (Média por pacote),LOCt (Média por pacote),LOCt(rec) (Média por pacote)
+JumpGo Browser,"386,086956521739","1388,84057971015","384,086956521739","1380,84057971015",2,8
+Navegadores,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
+JumpGo Browser,162,0,18683,1171,7265,96136,26502,138,24113,23250,123
+Navegadores,AHF,AIF,CF,MHF,MIF,PF
+JumpGo Browser,"92,04%","72,76%","15,13%","47,29%","18,20%","178,33%"
+Navegadores,CBO - Média,DIT – Média,LCOM – Média,NOC – Média,RFC – Média,WMC – Média
+JumpGo Browser,"7,44354838709677","2,17741935483871","2,12096774193548","0,419354838709677","31,7096774193548","22,8064516129032"
+Navegadores,LOC (Média por pacote),LOC(rec)(Média por pacote),LOCp (Média por pacote),LOCp(rec) (Média por pacote),LOCt (Média por pacote),LOCt(rec) (Média por pacote)
+Keepass2Android,"1023,58139534884","3707,1511627907","1023,58139534884","3707,1511627907",0,0
+Navegadores,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
+Keepass2Android,0,0,87625,0,30541,136294,88028,0,96248,65506,0
+Navegadores,AHF,AIF,CF,MHF,MIF,PF
+Keepass2Android,"77,04%","62,16%","1,45%","40,86%","34,03%","46,81%"
+Navegadores,CBO - Média,DIT – Média,LCOM – Média,NOC – Média,RFC – Média,WMC – Média
+JumpGo Browser,"5,91689750692521","1,74653739612188","1,51108033240997","0,329639889196676","18,601108033241","15,8767313019391"
+Navegadores,LOC (Média por pacote),LOC(rec)(Média por pacote),LOCp (Média por pacote),LOCp(rec) (Média por pacote),LOCt (Média por pacote),LOCt(rec) (Média por pacote)
+Kiwi Browser,"1675,94605809129","7745,18464730291","1600,81742738589","7501,49170124481","75,1286307053942","243,692946058091"
+Navegadores,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
+Kiwi Browser,385,32316,798957,0,24936,1486714,780277,36212,753209,589060,30166
+Navegadores,AHF,AIF,CF,MHF,MIF,PF
+Kiwi Browser,"84,69%","57,88%","0,30%","48,23%","38,28%","27,95%"
+Navegadores,CBO - Média,DIT – Média,LCOM – Média,NOC – Média,RFC – Média,WMC – Média
+Kiwi Browser,"9,38715921922891","1,52535932595407","2,37054363607033","0,366925491491822","18,5465407057516","15,4173253750605"
+Navegadores,LOC (Média por pacote),LOC(rec)(Média por pacote),LOCp (Média por pacote),LOCp(rec) (Média por pacote),LOCt (Média por pacote),LOCt(rec) (Média por pacote)
+Kiwi Browser - Fast & Quiet,"1680,21413721414","7764,42203742204","1604,92931392931","7520,22245322245","75,2848232848233","244,199584199584"
+Navegadores,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
+Kiwi Browser - Fast & Quiet,385,32316,799334,0,24936,1487092,780654,36212,753525,589375,30166
+Navegadores,AHF,AIF,CF,MHF,MIF,PF
+Kiwi Browser - Fast & Quiet,"84,70%","57,89%","0,30%","48,23%","38,28%","28,01%"
+Navegadores,CBO - Média,DIT – Média,LCOM – Média,NOC – Média,RFC – Média,WMC – Média
+Kiwi Browser - Fast & Quiet,"9,38042251249799","1,5251857968621","2,36929527495565","0,366804293971924","18,5422857936398","15,4189646831156"
+Navegadores,LOC (Média por pacote),LOC(rec)(Média por pacote),LOCp (Média por pacote),LOCp(rec) (Média por pacote),LOCt (Média por pacote),LOCt(rec) (Média por pacote)
+Lightning-Browser,"299,352941176471","1066,03529411765","289,717647058823","1022,87058823529","9,63529411764706","43,1647058823529"
+Navegadores,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
+Lightning-Browser,198,287,6329,12296,6985,72909,24626,819,22772,21226,741
+Navegadores,AHF,AIF,CF,MHF,MIF,PF
+Lightning-Browser,"97,94%","40,00%","37,33%","52,22%","1,46%","100,00%"
+Navegadores,CBO - Média,DIT – Média,LCOM – Média,NOC – Média,RFC – Média,WMC – Média
+Lightning-Browser,"4,22222222222222","1,25","3,08333333333333","0,305555555555556","33,1666666666667","27,3055555555556"
+Package,LOC,LOC(rec),LOCp,LOCp(rec),LOCt,LOCt(rec)
+,904,18074,904,18074,0,0
+Lucid Browser,"602,466666666667","1431,25","602,466666666667","1431,25",0,0
+Package,LOC,LOC(rec),LOCp,LOCp(rec),LOCt,LOCt(rec),,,,,
+Project,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
+project,44,879,7942,0,9326,18618,18074,0,17176,17028,0
+MOOD metrics,Qui, 22 ago 2019 18:21:54 BRT
+Project,AHF,AIF,CF,MHF,MIF,PF
+project,"56,49%","87,44%","38,44%","25,83%","12,25%","416,67%"
+
+Class,CBO,DIT,LCOM,NOC,RFC,WMC
+Lucid Browser,"7,46153846153846","3,19230769230769","1,73076923076923","0,076923076923077","30,5555555555556","23,1923076923077"
+Navegadores,LOC (Média por pacote),LOC(rec)(Média por pacote),LOCp (Média por pacote),LOCp(rec) (Média por pacote),LOCt (Média por pacote),LOCt(rec) (Média por pacote)
+Lynket Browser,"276,369565217391","1022,57971014493","272,072463768116","1003,76086956522","4,29710144927536","18,8188405797101"
+Navegadores,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
+Lynket Browser,269,92,16607,10042,11611,40009,37546,593,29823,28408,372
+Navegadores,AHF,AIF,CF,MHF,MIF,PF
+Lynket Browser,"69,70%","87,28%","6,27%","42,75%","8,47%","130,08%"
+Navegadores,CBO - Média,DIT – Média,LCOM – Média,NOC – Média,RFC – Média,WMC – Média
+Lynket Browser,"4,92857142857143","1,8956043956044","1,62637362637363","0,21978021978022","20,1813186813187","10,978021978022"
+Navegadores,LOC (Média por pacote),LOC(rec)(Média por pacote),LOCp (Média por pacote),LOCp(rec) (Média por pacote),LOCt (Média por pacote),LOCt(rec) (Média por pacote)
+Midori-Web-Browser,"84,1428571428571","167,571428571429","84,1428571428571","167,571428571429",0,0
+Navegadores,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
+Midori-Web-Browser,53,0,0,292,684,1443,589,0,1047,582,0
+Navegadores,AHF,AIF,CF,MHF,MIF,PF
+Midori-Web-Browser,"100,00%","100,00%","100,00%","100,00%","100,00%","100,00%"
+Navegadores,CBO,DIT,LCOM,NOC,RFC,WMC
+Midori-Web-Browser,0,0,0,0,0,0
+Navegadores,LOC (Média por pacote),LOC(rec)(Média por pacote),LOCp (Média por pacote),LOCp(rec) (Média por pacote),LOCt (Média por pacote),LOCt(rec) (Média por pacote)
+Opera com VPN gratuita,"401,25","2084,5","401,25","2084,5",0,0
+Navegadores,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
+Opera com VPN gratuita,31,0,3192,0,40,3534,3210,0,2020,1975,0
+Navegadores,AHF,AIF,CF,MHF,MIF,PF
+Opera com VPN gratuita,"58,03%","60,59%","27,89%","15,54%","41,79%","26,49%"
+Navegadores,CBO - Média,DIT – Média,LCOM – Média,NOC – Média,RFC – Média,WMC – Média
+Opera com VPN gratuita,"3,81818181818182","2,72727272727273","1,90909090909091","0,590909090909091","15,2272727272727","13,3181818181818"
+Navegadores,LOC (Média por pacote),LOC(rec)(Média por pacote),LOCp (Média por pacote),LOCp(rec) (Média por pacote),LOCt (Média por pacote),LOCt(rec) (Média por pacote)
+Orfox Browser,"56,6666666666667","68,25","50,8333333333333","55,125","5,83333333333333","13,125"
+Navegadores,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
+Orfox Browser,48,0,103,0,366,4633,305,35,538,305,24
+Navegadores,AHF,AIF,CF,MHF,MIF,PF
+Orfox Browser,"30,00%","92,19%","66,67%","14,29%","0,00%","100,00%"
+Navegadores,CBO - Média,DIT – Média,LCOM – Média,NOC – Média,RFC – Média,WMC – Média
+Orfox Browser,"0,666666666666667","3,33333333333333","1,33333333333333",0,8,"3,33333333333333"
+Navegadores,LOC (Média por pacote),LOC(rec)(Média por pacote),LOCp (Média por pacote),LOCp(rec) (Média por pacote),LOCt (Média por pacote),LOCt(rec) (Média por pacote)
+Pale Moon,"1349,64505119454","3635,75767918089","1349,64505119454","3635,75767918089",0,0
+Navegadores,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
+Pale Moon,333,1526672,321126,0,261111,15144234,461268,0,5603803,255986,0
+Navegadores,AHF,AIF,CF,MHF,MIF,PF
+Pale Moon,"67,47%","17,50%","0,49%","43,73%","23,50%","10,88%"
+Navegadores,CBO - Média,DIT – Média,LCOM – Média,NOC – Média,RFC – Média,WMC – Média
+Pale Moon,"6,12252193695158","1,12609684757881","1,51348716282093","0,356841078973026","13,4228144296393","12,7510562235944"
+Navegadores,LOC (Média por pacote),LOC(rec)(Média por pacote),LOCp (Média por pacote),LOCp(rec) (Média por pacote),LOCt (Média por pacote),LOCt(rec) (Média por pacote)
+PrivacyBrowser,"6466,29411764706","8608,73529411765","6466,29411764706","8608,73529411765",0,0
+Navegadores,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
+PrivacyBrowser,109,27172,24281,0,13445,222181,219854,0,52913,52622,0
+Navegadores,AHF,AIF,CF,MHF,MIF,PF
+PrivacyBrowser,"68,59%","90,98%","23,64%","30,40%","0,00%","1.214,81%"
+Navegadores,CBO - Média,DIT – Média,LCOM – Média,NOC – Média,RFC – Média,WMC – Média
+PrivacyBrowser,"6,61627906976744","2,66279069767442","1,48837209302326",0,"35,2674418604651","28,3720930232558"
+Navegadores,LOC (Média por pacote),LOC(rec)(Média por pacote),LOCp (Média por pacote),LOCp(rec) (Média por pacote),LOCt (Média por pacote),LOCt(rec) (Média por pacote)
+Smart Browser,"525,4375","1322,40625","525,4375","1322,40625",0,0
+Navegadores,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
+Smart Browser,52,0,8501,0,8428,67350,66052,0,16915,16712,0
+Project,AHF,AIF,CF,MHF,MIF,PF
+Smart Browser,"91,53%","87,93%","18,32%","36,92%","0,62%","935,90%"
+Navegadores,CBO - Média,DIT – Média,LCOM – Média,NOC – Média,RFC – Média,WMC – Média
+Smart Browser,"7,26923076923077","2,74358974358974","2,03846153846154","0,025641025641026","26,0897435897436","14,8717948717949"
+Navegadores,LOC (Média por pacote),LOC(rec)(Média por pacote),LOCp (Média por pacote),LOCp(rec) (Média por pacote),LOCt (Média por pacote),LOCt(rec) (Média por pacote)
+Tor-Browser,"18882,6363636364","19024,4545454545","18879,4545454545","19011,7272727273","3,18181818181818","12,7272727272727"
+Project,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
+Tor-Browser,98,0,520,0,273,212146,207674,35,842,666,24
+Navegadores,AHF,AIF,CF,MHF,MIF,PF
+Tor-Browser,"10,79%","72,00%","25,00%","41,67%","0,00%","100,00%"
+Navegadores,CBO - Média,DIT – Média,LCOM – Média,NOC – Média,RFC – Média,WMC – Média
+Tor-Browser,"1,125","1,625","1,375",0,"14,375","6,5"
+Navegadores,LOC (Média por pacote),LOC(rec)(Média por pacote),LOCp (Média por pacote),LOCp(rec) (Média por pacote),LOCt (Média por pacote),LOCt(rec) (Média por pacote)
+UFO Web Browser,"299,352941176471","1066,03529411765","289,717647058823","1022,87058823529","9,63529411764706","43,1647058823529"
+Navegadores,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
+UFO Web Browser,198,287,6329,12296,6985,72909,24626,819,22772,21226,741
+Navegadores,AHF,AIF,CF,MHF,MIF,PF
+UFO Web Browser,"97,94%","40,00%","37,33%","52,22%","1,46%","100,00%"
+Navegadores,CBO - Média,DIT – Média,LCOM – Média,NOC – Média,RFC – Média,WMC – Média
+UFO Web Browser,"4,34285714285714","1,32352941176471","3,17142857142857","0,323529411764706","33,1666666666667","28,0857142857143"
+Project,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
+/,25,20372,786321,0,29002,932827,786534,3023,664711,611749,2585
+Navegadores,LOC (Média por pacote),LOC(rec)(Média por pacote),LOCp (Média por pacote),LOCp(rec) (Média por pacote),LOCt (Média por pacote),LOCt(rec) (Média por pacote)
+Ungoogled Chromium,"1648,34446764092","8925,01919385797","1642,03340292276","8899,08829174664","6,31106471816284","25,9309021113244"
+MOOD metrics,S�b, 24 ago 2019 12:03:15 BRT
+Project,AHF,AIF,CF,MHF,MIF,PF
+project,"83,00%","35,76%","0,27%","47,97%","41,17%","21,42%"
+
+Navegadores,CBO - Média,DIT – Média,LCOM – Média,NOC – Média,RFC – Média,WMC – Média
+Ungoogled Chromium,"9,84581908610507","1,45001562011871","2,23360273546783","0,354264292408622","17,0341085271318","14,3714640969848"
+Navegadores,LOC (Média por pacote),LOC(rec)(Média por pacote),LOCp (Média por pacote),LOCp(rec) (Média por pacote),LOCt (Média por pacote),LOCt(rec) (Média por pacote)
+Waterfox,"1542,61832061069","7741,89198606272","1542,20610687023","7739,59233449477","0,412213740458015","2,29965156794425"
+Project,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
+project,1002,14603,403365,0,28655,514946,404058,108,369744,293254,95
+MOOD metrics,Sex, 23 ago 2019 10:04:34 BRT
+Project,AHF,AIF,CF,MHF,MIF,PF
+project,"74,26%","30,23%","0,45%","44,12%","38,15%","29,93%"
+
+Navegadores,CBO - Média,DIT – Média,LCOM – Média,NOC – Média,RFC – Média,WMC – Média
+Waterfox,"9,38470451911935","1,63097398669087","1,73406720741599","0,369026013309135","14,8529918739227","13,9339513325608"
+Navegadores,LOC (Média por pacote),LOC(rec)(Média por pacote),LOCp (Média por pacote),LOCp(rec) (Média por pacote),LOCt (Média por pacote),LOCt(rec) (Média por pacote)
+Yuzu Browser,"329,688356164384","1355,52397260274","322,75","1318,04109589041","6,93835616438356","37,4828767123288"
+Navegadores,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
+Yuzu Browser,1226,1360,17961,50362,22545,100296,94414,2026,81913,77971,1225
+Navegadores,AHF,AIF,CF,MHF,MIF,PF
+Yuzu Browser,"62,84%","82,18%","3,48%","25,86%","10,40%","83,77%"
+Navegadores,CBO - Média,DIT – Média,LCOM – Média,NOC – Média,RFC – Média,WMC – Média
+Yuzu Browser,"3,81147540983607","2,03688524590164","1,75409836065574","0,180327868852459","17,9262295081967","11,3852459016393"
+Navegadores,LOC (Média por pacote),LOC(rec)(Média por pacote),LOCp (Média por pacote),LOCp(rec) (Média por pacote),LOCt (Média por pacote),LOCt(rec) (Média por pacote)
+Zirco,748,1874,748,1874,0,0
+Navegadores,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
+Zirco,33,34,12459,0,4173,17584,17204,0,13381,13279,0
+Navegadores,AHF,AIF,CF,MHF,MIF,PF
+Zirco,"79,74%","64,19%","10,93%","50,64%","2,09%","606,00%"
+Navegadores,CBO - Média,DIT – Média,LCOM – Média,NOC – Média,RFC – Média,WMC – Média
+Zirco,"5,72222222222222","2,26470588235294","1,84259259259259","0,058823529411765","23,2053571428571","14,9259259259259"
