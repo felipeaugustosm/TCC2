@@ -10,8 +10,7 @@ column <- c("LOC_Média_por_pacote", "L_Groovy", "L_HTML", "L_J", "L_KT", "L_XML"
 options(digits=4)
 for(metric in 3:21){
   resultado[,metric] <- as.numeric(sub(",",".",resultado[,metric],fixed=TRUE))
-  jpeg(filename = columnpath[metric-2], width = 350, height = 350, bg = "transparent")
-  Ecdf(resultado[,metric], group=resultado[,2], col=c('blue', 'red', 'green', 'orange'), xlab=column[metric-2],ylab="Quantidade")
+  jpeg(filename = columnpath[metric-2], width = 750, height = 750, bg = "transparent")
+  Ecdf(resultado[,metric], group=resultado[,2], col=c('blue', 'red', 'green', 'orange'), label.curves=list(method='arrow'), xlab=column[metric-2],ylab="Quantidade")
   dev.off()
 }
-
