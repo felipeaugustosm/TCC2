@@ -1,36 +1,28 @@
+import os
 import glob
 import csv
+import pandas as pd
+import numpy as np
 
-countLinhas = 0
+resultados = []
 
 for pastas in glob.glob('C:/Users/felip/Documents/TCC2/Metricas/*'):      #isso iria listar diretorios
     pasta = ''
     pasta = '' + pastas
-    s = '/*.csv'
-    pasta+=s
-    
+
     barra= "\\"
     ppath = ''
     ppath = pasta.replace(barra,'/')
-    #print(ppath)
 
-    for arquivos in glob.glob(ppath):
-        arquivo = open(arquivos)
+    extension = 'csv'
+    os.chdir(ppath)
+    all_filenames = [i for i in glob.glob('*.{}'.format(extension))]
 
-        linhas = csv.reader(arquivo)
+    for filename in all_filenames:
+        df = pd.read_csv(filename, index_col=None, header=0, parse_dates=True, infer_datetime_format=True)
+        resultados.append(df)
 
-        for linha in linhas:
-            if linha.__contains__('Navegadores') and countLinhas>0:
-                countLinhas += 1
-            elif linha.__contains__('Navegadores'):
-                countLinhas += 1
-                print(linha)
-                with open('C:/Users/felip/Documents/TCC2/Resultados-v1.csv', 'a') as writeFile:
-                    writer = csv.writer(writeFile, lineterminator='\n')
-                    writer.writerows(linha)
-                    writeFile.close()
-            else:
-                with open('C:/Users/felip/Documents/TCC2/Resultados-v1.csv', 'a') as writeFile:
-                    writer = csv.writer(writeFile, lineterminator=']')
-                    writer.writerows(linha)
-                    writeFile.close()
+os.chdir("C:/Users/felip/Documents/TCC2/Scripts/Python")
+
+frame = pd.concat(resultados, axis=0, ignore_index=True, sort=False)
+frame.to_csv('melted_csv.csv', index=False)

@@ -1,3 +1,2 @@
-Package,LOC,LOC(rec),LOCp,LOCp(rec),LOCt,LOCt(rec),,,,,
-Project,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
-project,44,879,7942,0,9326,18618,18074,0,17176,17028,0
+Navegadores,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC
+Lucid Browser,44,879,7942,0,9326,18618

@@ -1,4 +1,2 @@
-Lines of code metrics,Sex, 23 ago 2019 12:02:54 BRT,,,,,,,,,
-Package,LOC,LOC(rec),LOCp,LOCp(rec),LOCt,LOCt(rec),,,,,
-Project,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
-project,417,128,0,4338,609,17422,3546,9789,14314,3068,9546
+Navegadores,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC
+Firefox Nightly,417,128,0,4338,609,17422
