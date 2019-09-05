@@ -67,12 +67,17 @@ frame['WMC – Média'] = frame['WMC – Média'].astype(float)
 frame = frame.round({'WMC – Média':2})
 frame['LOC'] = frame['LOC'].astype(float)
 frame = frame.round({'LOC':2})
-
 cols = ["LOC (Média por pacote)",	"L(Groovy)",	"L(HTML)",	"L(J)",	"L(KT)",	"L(XML)",	"LOC",	"AHF (%)",	"AIF (%)",	"CF (%)",	"MHF (%)",	"MIF (%)",	"PF (%)",	"CBO - Média",	"DIT – Média",	"LCOM – Média",	"NOC – Média",	"RFC – Média",	"WMC – Média",	"CBO",	"DIT",	"LCOM",	"NOC", "RFC", "WMC"]
 for col in cols:  # Iterate over chosen columns
         if not col:
                 frame[col] = frame[col].astype(float)
+
+os.chdir("C:/Users/felip/Documents/TCC2/Resultados/Metricas_CSV")
+
 resultadosFrame = pd.DataFrame(frame.groupby('Navegadores', as_index=False, sort=False)['LOC (Média por pacote)', 'L(Groovy)', 'L(HTML)', 'L(J)', 'L(KT)', 'L(XML)', 'LOC', 'AHF (%)', 'AIF (%)', 'CF (%)', 'MHF (%)', 'MIF (%)', 'PF (%)', 'CBO - Média', 'DIT – Média', 'LCOM – Média', 'NOC – Média', 'RFC – Média', 'WMC – Média', 'CBO', 'DIT', 'LCOM', 'NOC', 'RFC', 'WMC'].sum())
-resultadosFrame.to_csv('Resultados_Original2.csv', index=True)
+
+resultadosFrame['Classes'] = pd.Series(['Segurança', 'Tradicional', 'Privacidade', 'Privacidade', 'Tradicional', 'Segurança', 'Tradicional', 'Privacidade', 'Tradicional', 'Segurança', 'Tradicional', 'Tradicional', 'Privacidade', 'Tradicional', 'Privacidade', 'Segurança', 'Tradicional', 'Privacidade', 'Segurança', 'Privacidade', 'Segurança', 'Privacidade', 'Tradicional', 'Segurança', 'Privacidade', 'Privacidade', 'Tradicional', 'Segurança', 'Segurança', 'Segurança'])
+
+resultadosFrame.to_csv('Resultados_Original.csv', index=True)
 #frame.to_csv('Resultados_Original.csv', index=True)
 
