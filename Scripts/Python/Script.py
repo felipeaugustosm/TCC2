@@ -22,8 +22,6 @@ for pastas in glob.glob('C:/Users/felip/Documents/TCC2/Metricas/*'):      #isso 
         df = pd.read_csv(filename, index_col=None, header=0, parse_dates=True, infer_datetime_format=True)
         resultados.append(df)
 
-os.chdir("C:/Users/felip/Documents/TCC2/Scripts/Python")
-
 frame = pd.DataFrame(pd.concat(resultados, ignore_index=False, sort=False))
 frame.fillna(0, inplace=True)
 frame['LOC (Média por pacote)'] = (frame['LOC (Média por pacote)'].replace(',','.', regex=True))
