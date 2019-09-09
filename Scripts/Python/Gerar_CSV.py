@@ -6,7 +6,8 @@ import numpy as np
 
 resultados = []
 
-for pastas in glob.glob('C:/Users/felip/Documents/TCC2/Metricas/*'):      #isso iria listar diretorios
+# Percorre todos os arquivos das métricas dos navegadores e armazena em resultados
+for pastas in glob.glob('C:/Users/felip/Documents/TCC2/Metricas/*'):
     pasta = ''
     pasta = '' + pastas
 
@@ -22,8 +23,11 @@ for pastas in glob.glob('C:/Users/felip/Documents/TCC2/Metricas/*'):      #isso 
         df = pd.read_csv(filename, index_col=None, header=0, parse_dates=True, infer_datetime_format=True)
         resultados.append(df)
 
+# Armazena os valores coletados em um DataFrame e preenche os valores em branco com zero
 frame = pd.DataFrame(pd.concat(resultados, ignore_index=False, sort=False))
 frame.fillna(0, inplace=True)
+
+# Substitui as virgulas por pontos nas colunas que contem resultados com formatação errada
 frame['LOC (Média por pacote)'] = (frame['LOC (Média por pacote)'].replace(',','.', regex=True))
 frame['AHF (%)'] = (frame['AHF (%)'].replace(',','.', regex=True))
 frame['AIF (%)'] = (frame['AIF (%)'].replace(',','.', regex=True))
@@ -39,6 +43,7 @@ frame['RFC – Média'] = (frame['RFC – Média'].replace(',','.', regex=True))
 frame['WMC – Média'] = (frame['WMC – Média'].replace(',','.', regex=True))
 frame['LOC'] = (frame['LOC'].replace(',','.', regex=True))
 
+# Realiza um parse de string para float nas colunas que estão como string
 frame['LOC (Média por pacote)'] = frame['LOC (Média por pacote)'].astype(float)
 frame = frame.round({'LOC (Média por pacote)':2})
 frame['AIF (%)'] = frame['AIF (%)'].astype(float)
@@ -70,6 +75,8 @@ for col in cols:  # Iterate over chosen columns
         if not col:
                 frame[col] = frame[col].astype(float)
 
+
+#Armazena os resultados em um arquivo csv
 os.chdir("C:/Users/felip/Documents/TCC2/Resultados/Metricas_CSV")
 
 resultadosFrame = pd.DataFrame(frame.groupby('Navegadores', as_index=False, sort=False)['LOC (Média por pacote)', 'L(Groovy)', 'L(HTML)', 'L(J)', 'L(KT)', 'L(XML)', 'LOC', 'AHF (%)', 'AIF (%)', 'CF (%)', 'MHF (%)', 'MIF (%)', 'PF (%)', 'CBO - Média', 'DIT – Média', 'LCOM – Média', 'NOC – Média', 'RFC – Média', 'WMC – Média', 'CBO', 'DIT', 'LCOM', 'NOC', 'RFC', 'WMC'].sum())

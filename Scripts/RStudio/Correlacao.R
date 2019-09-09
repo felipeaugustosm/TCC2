@@ -2,25 +2,25 @@ resultados<-read.csv("C:/Users/felip/Documents/TCC2/Resultados/Metricas_CSV/Resu
                      sep = ",")
 
 #Calcula correlação das métricas dos navegadores da classe tradicional
-tradicionais<-subset(resultados, resultados[,21]==c("Tradicional"))
-for(metric in 3:20){
+tradicionais<-subset(resultados, resultados[,22]==c("Tradicional"))
+for(metric in 3:21){
   tradicionais[,metric] <- as.numeric(sub(",",".",tradicionais[,metric],fixed=TRUE))
 }
-dfcorrelacaoTradicionais<-cor(tradicionais[3:20],method = "spearman")
+dfcorrelacaoTradicionais<-cor(tradicionais[3:21],method = "spearman")
 
 #Calcula correlação das métricas dos navegadores da classe privacidade
-privacidade<-subset(resultados, resultados[,21]==c("Privacidade"))
-for(metric in 3:20){
+privacidade<-subset(resultados, resultados[,22]==c("Privacidade"))
+for(metric in 3:21){
   privacidade[,metric] <- as.numeric(sub(",",".",privacidade[,metric],fixed=TRUE))
 }
-dfcorrelacaoPrivacidade<-cor(privacidade[3:20],method = "spearman")
+dfcorrelacaoPrivacidade<-cor(privacidade[3:21],method = "spearman")
 
 #Calcula correlação das métricas dos navegadores da classe segurança
-seguranca<-subset(resultados, resultados[,21]==c("Seguranca"))
-for(metric in 3:20){
+seguranca<-subset(resultados, resultados[,22]==c("Seguranca"))
+for(metric in 3:21){
   seguranca[,metric] <- as.numeric(sub(",",".",seguranca[,metric],fixed=TRUE))
 }
-dfcorrelacaoSeguranca<-cor(seguranca[3:20],method = "spearman")
+dfcorrelacaoSeguranca<-cor(seguranca[3:21],method = "spearman")
 
 #Salva os resuldados da corelação no arquivo csv
 xlsx::write.xlsx(dfcorrelacaoTradicionais,file='C:/Users/felip/Documents/TCC2/Resultados/Correlacao/Correlacao.xlsx',sheetName = 'correlacaoTradicionais')
