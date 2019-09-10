@@ -1,17 +1,30 @@
-# Gerar função de distribuição cumulativa empírica
-require(graphics)
-library(lattice)
-library(Hmisc)
-resultado<- read.csv("C:/Users/felip/Documents/TCC2/Resultados/Metricas_CSV/Resultados_Original.csv", head = TRUE,
+resultados<-read.csv("C:/Users/felip/Documents/TCC2/Resultados/Metricas_CSV/Resultados_Original.csv", header = FALSE,
                      sep = ",")
 
-#Salva os gráficos gerados das distribuição cumulativa
-columnpath <- c("C:/Users/felip/Documents/TCC2/Resultados/Graficos/LOC_Média_por_pacote.jpg", "C:/Users/felip/Documents/TCC2/Resultados/Graficos/L_Groovy.jpg", "C:/Users/felip/Documents/TCC2/Resultados/Graficos/L_HTML.jpg", "C:/Users/felip/Documents/TCC2/Resultados/Graficos/L_J.jpg", "C:/Users/felip/Documents/TCC2/Resultados/Graficos/L_KT.jpg", "C:/Users/felip/Documents/TCC2/Resultados/Graficos/L_XML.jpg", "C:/Users/felip/Documents/TCC2/Resultados/Graficos/LOC.jpg", "C:/Users/felip/Documents/TCC2/Resultados/Graficos/CBO.jpg", "C:/Users/felip/Documents/TCC2/Resultados/Graficos/DIT.jpg",	"C:/Users/felip/Documents/TCC2/Resultados/Graficos/LCOM.jpg",	"C:/Users/felip/Documents/TCC2/Resultados/Graficos/NOC.jpg",	"C:/Users/felip/Documents/TCC2/Resultados/Graficos/RFC.jpg",	"C:/Users/felip/Documents/TCC2/Resultados/Graficos/WMC.jpg",	"C:/Users/felip/Documents/TCC2/Resultados/Graficos/AHF.jpg", 	"C:/Users/felip/Documents/TCC2/Resultados/Graficos/AIF.jpg", 	"C:/Users/felip/Documents/TCC2/Resultados/Graficos/CF.jpg", 	"C:/Users/felip/Documents/TCC2/Resultados/Graficos/MHF.jpg", 	"C:/Users/felip/Documents/TCC2/Resultados/Graficos/MIF.jpg", 	"C:/Users/felip/Documents/TCC2/Resultados/Graficos/PF.jpg")
-column <- c("LOC_Média_por_pacote", "L_Groovy", "L_HTML", "L_J", "L_KT", "L_XML", "LOC", "CBO", "DIT",	"LCOM",	"NOC",	"RFC",	"WMC",	"AHF", 	"AIF", 	"CF", 	"MHF", 	"MIF", 	"PF")
-options(digits=4)
+#Calcula correlação das métricas dos navegadores da classe tradicional
+tradicionais<-subset(resultados, resultados[,22]==c("Tradicional"))
 for(metric in 3:21){
-  #resultado[,metric] <- as.numeric(sub(",",".",resultado[,metric],fixed=TRUE))
-  jpeg(filename = columnpath[metric-2], width = 750, height = 750, bg = "transparent")
-  Ecdf(resultado[,metric], group=resultado[,22], col=c('blue', 'red', 'green', 'orange'), label.curves=list(method='arrow'), xlab=column[metric-2],ylab="Quantidade")
-  dev.off()
+  tradicionais[,metric] <- as.numeric(sub(",",".",tradicionais[,metric],fixed=TRUE))
 }
+dfcorrelacaoTradicionais<-cor(tradicionais[3:21],method = "spearman")
+
+#Calcula correlação das métricas dos navegadores da classe privacidade
+privacidade<-subset(resultados, resultados[,22]==c("Privacidade"))
+for(metric in 3:21){
+  privacidade[,metric] <- as.numeric(sub(",",".",privacidade[,metric],fixed=TRUE))
+}
+dfcorrelacaoPrivacidade<-cor(privacidade[3:21],method = "spearman")
+
+#Calcula correlação das métricas dos navegadores da classe segurança
+seguranca<-subset(resultados, resultados[,22]==c("Seguranca"))
+for(metric in 3:21){
+  seguranca[,metric] <- as.numeric(sub(",",".",seguranca[,metric],fixed=TRUE))
+}
+dfcorrelacaoSeguranca<-cor(seguranca[3:21],method = "spearman")
+
+#Salva os resuldados da corelação no arquivo csv
+xlsx::write.xlsx(dfcorrelacaoTradicionais,file='C:/Users/felip/Documents/TCC2/Resultados/Correlacao/Correlacao.xlsx',sheetName = 'correlacaoTradicionais')
+
+xlsx::write.xlsx(dfcorrelacaoPrivacidade,file='C:/Users/felip/Documents/TCC2/Resultados/Correlacao/Correlacao.xlsx',sheetName = 'correlacaoPrivacidade',append = T)
+
+xlsx::write.xlsx(dfcorrelacaoSeguranca,file='C:/Users/felip/Documents/TCC2/Resultados/Correlacao/Correlacao.xlsx',sheetName = 'correlacaoSeguranca',append = T)

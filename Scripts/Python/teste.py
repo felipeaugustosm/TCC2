@@ -43,7 +43,7 @@ resultadosFrame = pd.DataFrame(frame.groupby('Navegadores', as_index=False, sort
 
 resultadosFrameBrowser = resultadosFrame.copy()
 
-resultadosFrame['Classes'] = pd.Series(['Segurança', 'Tradicional', 'Privacidade', 'Privacidade', 'Tradicional', 'Segurança', 'Tradicional', 'Privacidade', 'Tradicional', 'Segurança', 'Tradicional', 'Tradicional', 'Privacidade', 'Tradicional', 'Privacidade', 'Segurança', 'Tradicional', 'Privacidade', 'Segurança', 'Privacidade', 'Segurança', 'Privacidade', 'Tradicional', 'Segurança', 'Privacidade', 'Privacidade', 'Tradicional', 'Segurança', 'Segurança', 'Segurança', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos'])
+resultadosFrame['Classes'] = pd.Series(['Seguranca', 'Tradicional', 'Privacidade', 'Privacidade', 'Tradicional', 'Seguranca', 'Tradicional', 'Privacidade', 'Tradicional', 'Seguranca', 'Tradicional', 'Tradicional', 'Privacidade', 'Tradicional', 'Privacidade', 'Seguranca', 'Tradicional', 'Privacidade', 'Seguranca', 'Privacidade', 'Seguranca', 'Privacidade', 'Tradicional', 'Seguranca', 'Privacidade', 'Privacidade', 'Tradicional', 'Seguranca', 'Seguranca', 'Seguranca'])
 
 resultadosFrameBrowser['Classes'] = pd.Series(['Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos', 'Todos'])
 
