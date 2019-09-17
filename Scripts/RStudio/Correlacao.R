@@ -22,9 +22,19 @@ for(metric in 3:21){
 }
 dfcorrelacaoSeguranca<-cor(seguranca[3:21],method = "spearman")
 
-#Salva os resuldados da corelação no arquivo csv
+#Calcula correlação das métricas de todas as classes de navegadores
+todos<-subset(resultados, resultados[,22]==c("Todos"))
+for(metric in 3:21){
+  todos[,metric] <- as.numeric(sub(",",".",todos[,metric],fixed=TRUE))
+}
+dfcorrelacaoTodos<-cor(todos[3:21],method = "spearman")
+
+
+#Salva os resuldados da corelação no arquivo
 xlsx::write.xlsx(dfcorrelacaoTradicionais,file='C:/Users/felip/Documents/TCC2/Resultados/Correlacao/Correlacao.xlsx',sheetName = 'correlacaoTradicionais')
 
 xlsx::write.xlsx(dfcorrelacaoPrivacidade,file='C:/Users/felip/Documents/TCC2/Resultados/Correlacao/Correlacao.xlsx',sheetName = 'correlacaoPrivacidade',append = T)
 
 xlsx::write.xlsx(dfcorrelacaoSeguranca,file='C:/Users/felip/Documents/TCC2/Resultados/Correlacao/Correlacao.xlsx',sheetName = 'correlacaoSeguranca',append = T)
+
+xlsx::write.xlsx(dfcorrelacaoTodos,file='C:/Users/felip/Documents/TCC2/Resultados/Correlacao/Correlacao.xlsx',sheetName = 'correlacaoTodos',append = T)
