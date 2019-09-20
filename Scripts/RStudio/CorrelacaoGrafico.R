@@ -28,6 +28,7 @@ pathnameFile = paste(path, nameFile)
 jpeg(filename = pathnameFile, width = 1000, height = 1000, units = "px", pointsize = 12,
      quality = 75, bg = "white")
   ggcorrplot(Tradicionaisdf[,2:20],
+             title="Correlação Tradicional",
              hc.order = TRUE,
              type = "lower",
              outline.color = "white")
@@ -38,6 +39,7 @@ pathnameFile = paste(path, nameFile)
 jpeg(filename = pathnameFile, width = 1000, height = 1000, units = "px", pointsize = 12,
      quality = 75, bg = "white")
 ggcorrplot(Privacidadedf[,2:20],
+           title="Correlação Privacidade",
            hc.order = TRUE,
            type = "lower",
            outline.color = "white")
@@ -49,6 +51,7 @@ pathnameFile = paste(path, nameFile)
 jpeg(filename = pathnameFile, width = 1000, height = 1000, units = "px", pointsize = 12,
      quality = 75, bg = "white")
 ggcorrplot(Segurancadf[,2:20],
+           title="Correlação Segurança",
            hc.order = TRUE,
            type = "lower",
            outline.color = "white")
@@ -59,6 +62,7 @@ pathnameFile = paste(path, nameFile)
 jpeg(filename = pathnameFile, width = 1000, height = 1000, units = "px", pointsize = 12,
      quality = 75, bg = "white")
 ggcorrplot(Todosdf[,2:20],
+           title="Correlação Todos",
            hc.order = TRUE,
            type = "lower",
            outline.color = "white")
