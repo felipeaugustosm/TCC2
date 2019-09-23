@@ -9,7 +9,7 @@ seguranca<-subset(resultados, resultados[,22]==c("Seguranca"))
 
 todos <-subset(resultados, resultados[,22]==c("Todos"))
 
-path="C:/Users/felip/Documents/TCC2/Resultados/Graficos/Metricas_de_Tamanho/"
+path="C:/Users/felip/Documents/TCC2/Resultados/Graficos/Distribuicao/Metricas_de_Tamanho/"
 extensao=".jpeg"
 
 for(metric in 3:9){
@@ -30,7 +30,7 @@ for(metric in 3:9){
 }
 
 
-path="C:/Users/felip/Documents/TCC2/Resultados/Graficos/Metricas_Acoplamento/"
+path="C:/Users/felip/Documents/TCC2/Resultados/Graficos/Distribuicao/Metricas_Acoplamento/"
 
 for(metric in 10:15){
   ditTradicionais <- ecdf(tradicionais[,metric])
@@ -49,7 +49,7 @@ for(metric in 10:15){
   dev.off()
 }
 
-path="C:/Users/felip/Documents/TCC2/Resultados/Graficos/Metricas_Estruturais/"
+path="C:/Users/felip/Documents/TCC2/Resultados/Graficos/Distribuicao/Metricas_Estruturais/"
 
 for(metric in 16:21){
   ditTradicionais <- ecdf(tradicionais[,metric])
