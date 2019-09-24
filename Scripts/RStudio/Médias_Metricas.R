@@ -30,11 +30,10 @@ for(metric in 3:9){
   
   jpeg(filename = pathnameFile, width = 500, height = 500)
     barplot(as.vector(vecPlot), col=c("red","blue","green", "orange"),
+            legend = vecLegends, args.legend = list(bty = "n", x = "topright", ncol = 1),
             ylab="Médias",
-            xlab="Classes",
-            main=cabecalho[1,metric])
-    legend("topright", legend=vecLegends,
-           col=c("red","blue","green", "orange"))
+            xlab="Classes", cex.axis = 2, cex.lab=1.5,
+            main=cabecalho[1,metric], las=1)
   dev.off()
 }
 
@@ -55,11 +54,10 @@ for(metric in 10:15){
   
   jpeg(filename = pathnameFile, width = 500, height = 500)
   barplot(as.vector(vecPlot), col=c("red","blue","green", "orange"),
+          legend = vecLegends, args.legend = list(bty = "n", x = "topright", ncol = 1),
           ylab="Médias",
-          xlab="Classes",
-          main=cabecalho[1,metric])
-  legend("topright", legend=vecLegends,
-         col=c("red","blue","green", "orange"))
+          xlab="Classes", cex.axis = 2, cex.lab=1.5,
+          main=cabecalho[1,metric], las=1)
   dev.off()
 }
 
@@ -81,10 +79,9 @@ for(metric in 16:21){
   
   jpeg(filename = pathnameFile, width = 500, height = 500)
   barplot(as.vector(vecPlot), col=c("red","blue","green", "orange"),
+          legend = vecLegends, args.legend = list(bty = "n", x = "topright", ncol = 1),
           ylab="Médias",
-          xlab="Classes",
-          main=cabecalho[1,metric])
-  legend("topright", legend=vecLegends,
-         col=c("red","blue","green", "orange"))
+          xlab="Classes", cex.axis = 1, cex.lab=1.5,
+          main=cabecalho[1,metric], las=1)
   dev.off()
 }

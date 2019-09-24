@@ -21,11 +21,34 @@ for(metric in 3:9){
   nameFile = paste(resultados[1,metric], extensao)
   pathnameFile = paste(path, nameFile)
   jpeg(filename = pathnameFile)
-    plot(ditTradicionais,  main="Distribuição cumulativa empírica", xlab=resultados[1,metric],ylab="Quantidade", verticals=TRUE, pch=46, col="red")
+#    par(mfrow=c(2, 2))
+    plot(ditTradicionais, xlab=resultados[1,metric], ylab="Quantidade", main="", verticals=TRUE, pch=46, cex.axis = 1, cex.lab=1.5, col="red", las=1)
     lines(ditPrivacidade, verticals=TRUE, pch=45, col="khaki")
     lines(ditSeguranca, verticals=TRUE, pch=44, col="seashell2")
     lines(ditTodos, verticals=TRUE, pch=43, col="purple")
-    legend("topleft", legend=c("Tradicionais", "Privacidade", "Segurança", "Todos"), col=c("red", "khaki", "seashell2", "purple"), lty=1:2, cex=0.8)
+    legend("bottomright", legend=c("Tradicionais", "Privacidade", "Segurança", "Todos"), col=c("red", "khaki", "seashell2", "purple"), lty=1:2, cex=1.5)
+
+    if(metric==3){
+      title("(a) Métrica LOC (Média por pacote)", main = "")  
+    }
+    else if(metric==4){
+      title("(b) Métrica LOC Groovy", main = "")  
+    }
+    else if(metric==5){
+      title("(a) Métrica LOC HTML", main = "")  
+    }
+    else if(metric==6){
+      title("(a) Métrica LOC Java", main = "")  
+    }
+    else if(metric==7){
+      title("(b) Métrica LOC Kotlin", main = "")  
+    }
+    else if(metric==8){
+      title("(b) Métrica LOC XML", main = "")  
+    }
+    else if(metric==9){
+      title("(b) Métrica LOC", main = "")  
+    }
   dev.off()
 }
 
@@ -41,11 +64,30 @@ for(metric in 10:15){
   nameFile = paste(resultados[1,metric], extensao)
   pathnameFile = paste(path, nameFile)
   jpeg(filename = pathnameFile)
-  plot(ditTradicionais, main="Distribuição cumulativa empírica", xlab=resultados[1,metric],ylab="Quantidade", verticals=TRUE, pch=46, col="red")
-  lines(ditPrivacidade, verticals=TRUE, pch=46, col="khaki")
-  lines(ditSeguranca, verticals=TRUE, pch=46, col="seashell2")
-  lines(ditTodos, verticals=TRUE, pch=46, col="purple")
-  legend("topleft", legend=c("Tradicionais", "Privacidade", "Segurança", "Todos"), col=c("red", "khaki", "seashell2", "purple"), lty=1:2, cex=0.8)
+    plot(ditTradicionais, xlab=resultados[1,metric], ylab="Quantidade", main="", verticals=TRUE, pch=46, cex.axis = 1, cex.lab=1.5, col="red", las=1)
+    lines(ditPrivacidade, verticals=TRUE, pch=46, col="khaki")
+    lines(ditSeguranca, verticals=TRUE, pch=46, col="seashell2")
+    lines(ditTodos, verticals=TRUE, pch=46, col="purple")
+    legend("bottomright", legend=c("Tradicionais", "Privacidade", "Segurança", "Todos"), col=c("red", "khaki", "seashell2", "purple"), lty=1:2, cex=1.5)
+
+    if(metric==10){
+      title("(a) Métrica AHF", main = "")  
+    }
+    else if(metric==11){
+      title("(b) Métrica AIF", main = "")  
+    }
+    else if(metric==12){
+      title("(a) Métrica CF", main = "")  
+    }
+    else if(metric==13){
+      title("(b) Métrica MHF", main = "")  
+    }
+    else if(metric==14){
+      title("(a) Métrica MIF", main = "")  
+    }
+    else if(metric==15){
+      title("(b) Métrica PF", main = "")  
+    }
   dev.off()
 }
 
@@ -60,10 +102,28 @@ for(metric in 16:21){
   nameFile = paste(resultados[1,metric], extensao)
   pathnameFile = paste(path, nameFile)
   jpeg(filename = pathnameFile)
-  plot(ditTradicionais, main="Distribuição cumulativa empírica", xlab=resultados[1,metric],ylab="Quantidade", verticals=TRUE, pch=46, col="red")
-  lines(ditPrivacidade, verticals=TRUE, pch=46, col="khaki")
-  lines(ditSeguranca, verticals=TRUE, pch=46, col="seashell2")
-  lines(ditTodos, verticals=TRUE, pch=46, col="purple")
-  legend("topleft", legend=c("Tradicionais", "Privacidade", "Segurança", "Todos"), col=c("red", "khaki", "seashell2", "purple"), lty=1:2, cex=0.8)
+    plot(ditTradicionais, xlab=resultados[1,metric], ylab="Quantidade", main="", verticals=TRUE, pch=46, cex.axis = 1, cex.lab=1.5, col="red", las=1)
+    lines(ditPrivacidade, verticals=TRUE, pch=46, col="khaki")
+    lines(ditSeguranca, verticals=TRUE, pch=46, col="seashell2")
+    lines(ditTodos, verticals=TRUE, pch=46, col="purple")
+    legend("bottomright", legend=c("Tradicionais", "Privacidade", "Segurança", "Todos"), col=c("red", "khaki", "seashell2", "purple"), lty=1:2, cex=1.5)
+    if(metric==16){
+      title("(a) Métrica CBO", main = "")  
+    }
+    else if(metric==17){
+      title("(b) Métrica DIT", main = "")  
+    }
+    else if(metric==18){
+      title("(a) Métrica LCOM", main = "")  
+    }
+    else if(metric==19){
+      title("(b) Métrica NOC", main = "")  
+    }
+    else if(metric==20){
+      title("(a) Métrica RFC", main = "")  
+    }
+    else if(metric==21){
+      title("(b) Métrica WMC", main = "")  
+    }
   dev.off()
 }
