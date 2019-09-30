@@ -1,53 +1,75 @@
 resultados<-read.csv("C:/Users/felip/Documents/TCC2/Resultados/Metricas_CSV/Resultados_Original.csv", header = FALSE,
                      sep = ",")
 
-tradicionais<-subset(resultados, resultados[,22]==c("Tradicional"))
+tradicionais<-resultados[resultados, resultados[,22]%in%c("Tradicional"),]
 
-privacidade<-subset(resultados, resultados[,22]==c("Privacidade"))
+privacidade<-resultados[resultados, resultados[,22]%in%c("Privacidade"),]
 
-seguranca<-subset(resultados, resultados[,22]==c("Seguranca"))
+seguranca<-resultados[resultados, resultados[,22]%in%c("Seguranca"),]
 
-todos <-subset(resultados, resultados[,22]==c("Todos"))
+todos <-resultados[resultados, resultados[,22]%in%c("Todos"),]
 
 path="C:/Users/felip/Documents/TCC2/Resultados/Graficos/Distribuicao/Metricas_de_Tamanho/"
 extensao=".jpeg"
 
 for(metric in 3:9){
-  ditTradicionais <- ecdf(tradicionais[,metric])
-  ditPrivacidade <- ecdf(privacidade[,metric])
-  ditSeguranca <- ecdf(seguranca[,metric])
-  ditTodos <- ecdf(todos[,metric])
+  ditTradicionais <- ecdf(as.numeric(as.character(tradicionais[,metric])))
+  ditPrivacidade <- ecdf(as.numeric(as.character(privacidade[,metric])))
+  ditSeguranca <- ecdf(as.numeric(as.character(seguranca[,metric])))
+  ditTodos <- ecdf(as.numeric(as.character(todos[,metric])))
   
   nameFile = paste(resultados[1,metric], extensao)
   pathnameFile = paste(path, nameFile)
   jpeg(filename = pathnameFile)
-#    par(mfrow=c(2, 2))
-    plot(ditTradicionais, xlab="Distribuição", ylab="valores", main="", verticals=TRUE, pch=46, cex.axis = 1, cex.lab=1.5, col="red", las=1)
-    lines(ditPrivacidade, verticals=TRUE, pch=45, col="khaki")
-    lines(ditSeguranca, verticals=TRUE, pch=44, col="seashell2")
-    lines(ditTodos, verticals=TRUE, pch=43, col="purple")
-    legend("bottomright", legend=c("Tradicionais", "Privacidade", "Segurança", "Todos"), col=c("red", "khaki", "seashell2", "purple"), lty=1:2, cex=1.5)
-
+  #    par(mfrow=c(2, 2))
     if(metric==3){
-      title("(a) Métrica LOC (Média por pacote)", main = "")  
+      plot(ditTradicionais, ylab="Distribuição", xlab="Métrica LOC (Média por pacote)", verticals=TRUE, pch=46, cex.axis = 1, cex.lab=1.5, col="red", las=1)
+      lines(ditPrivacidade, verticals=TRUE, pch=45, col="khaki")
+      lines(ditSeguranca, verticals=TRUE, pch=44, col="seashell2")
+      lines(ditTodos, verticals=TRUE, pch=43, col="purple")
+      legend("bottomright", legend=c("Tradicionais", "Privacidade", "Segurança", "Todos"), col=c("red", "khaki", "seashell2", "purple"), lty=1:2, cex=1.5)
     }
     else if(metric==4){
-      title("(b) Métrica LOC Groovy", main = "")  
+      plot(ditTradicionais, ylab="Distribuição", xlab="Métrica LOC Groovy", verticals=TRUE, pch=46, cex.axis = 1, cex.lab=1.5, col="red", las=1)
+      lines(ditPrivacidade, verticals=TRUE, pch=45, col="khaki")
+      lines(ditSeguranca, verticals=TRUE, pch=44, col="seashell2")
+      lines(ditTodos, verticals=TRUE, pch=43, col="purple")
+      legend("bottomright", legend=c("Tradicionais", "Privacidade", "Segurança", "Todos"), col=c("red", "khaki", "seashell2", "purple"), lty=1:2, cex=1.5)
     }
     else if(metric==5){
-      title("(a) Métrica LOC HTML", main = "")  
+      plot(ditTradicionais, ylab="Distribuição", xlab="Métrica LOC HTML", verticals=TRUE, pch=46, cex.axis = 1, cex.lab=1.5, col="red", las=1)
+      lines(ditPrivacidade, verticals=TRUE, pch=45, col="khaki")
+      lines(ditSeguranca, verticals=TRUE, pch=44, col="seashell2")
+      lines(ditTodos, verticals=TRUE, pch=43, col="purple")
+      legend("bottomright", legend=c("Tradicionais", "Privacidade", "Segurança", "Todos"), col=c("red", "khaki", "seashell2", "purple"), lty=1:2, cex=1.5)
     }
     else if(metric==6){
-      title("(a) Métrica LOC Java", main = "")  
+      plot(ditTradicionais, ylab="Distribuição", xlab="Métrica LOC Java", verticals=TRUE, pch=46, cex.axis = 1, cex.lab=1.5, col="red", las=1)
+      lines(ditPrivacidade, verticals=TRUE, pch=45, col="khaki")
+      lines(ditSeguranca, verticals=TRUE, pch=44, col="seashell2")
+      lines(ditTodos, verticals=TRUE, pch=43, col="purple")
+      legend("bottomright", legend=c("Tradicionais", "Privacidade", "Segurança", "Todos"), col=c("red", "khaki", "seashell2", "purple"), lty=1:2, cex=1.5)
     }
     else if(metric==7){
-      title("(b) Métrica LOC Kotlin", main = "")  
+      plot(ditTradicionais, ylab="Distribuição", xlab="Métrica LOC Kotlin", verticals=TRUE, pch=46, cex.axis = 1, cex.lab=1.5, col="red", las=1)
+      lines(ditPrivacidade, verticals=TRUE, pch=45, col="khaki")
+      lines(ditSeguranca, verticals=TRUE, pch=44, col="seashell2")
+      lines(ditTodos, verticals=TRUE, pch=43, col="purple")
+      legend("bottomright", legend=c("Tradicionais", "Privacidade", "Segurança", "Todos"), col=c("red", "khaki", "seashell2", "purple"), lty=1:2, cex=1.5)
     }
     else if(metric==8){
-      title("(b) Métrica LOC XML", main = "")  
+      plot(ditTradicionais, ylab="Distribuição", xlab="Métrica LOC XML", verticals=TRUE, pch=46, cex.axis = 1, cex.lab=1.5, col="red", las=1)
+      lines(ditPrivacidade, verticals=TRUE, pch=45, col="khaki")
+      lines(ditSeguranca, verticals=TRUE, pch=44, col="seashell2")
+      lines(ditTodos, verticals=TRUE, pch=43, col="purple")
+      legend("bottomright", legend=c("Tradicionais", "Privacidade", "Segurança", "Todos"), col=c("red", "khaki", "seashell2", "purple"), lty=1:2, cex=1.5)
     }
     else if(metric==9){
-      title("(b) Métrica LOC", main = "")  
+      plot(ditTradicionais, ylab="Distribuição", xlab="Métrica LOC", verticals=TRUE, pch=46, cex.axis = 1, cex.lab=1.5, col="red", las=1)
+      lines(ditPrivacidade, verticals=TRUE, pch=45, col="khaki")
+      lines(ditSeguranca, verticals=TRUE, pch=44, col="seashell2")
+      lines(ditTodos, verticals=TRUE, pch=43, col="purple")
+      legend("bottomright", legend=c("Tradicionais", "Privacidade", "Segurança", "Todos"), col=c("red", "khaki", "seashell2", "purple"), lty=1:2, cex=1.5)
     }
   dev.off()
 }
@@ -56,74 +78,111 @@ for(metric in 3:9){
 path="C:/Users/felip/Documents/TCC2/Resultados/Graficos/Distribuicao/Metricas_Acoplamento/"
 
 for(metric in 10:15){
-  ditTradicionais <- ecdf(tradicionais[,metric])
-  ditPrivacidade <- ecdf(privacidade[,metric])
-  ditSeguranca <- ecdf(seguranca[,metric])
-  ditTodos <- ecdf(todos[,metric])
+  ditTradicionais <- ecdf(as.numeric(as.character(tradicionais[,metric])))
+  ditPrivacidade <- ecdf(as.numeric(as.character(privacidade[,metric])))
+  ditSeguranca <- ecdf(as.numeric(as.character(seguranca[,metric])))
+  ditTodos <- ecdf(as.numeric(as.character(todos[,metric])))
   
   nameFile = paste(resultados[1,metric], extensao)
   pathnameFile = paste(path, nameFile)
   jpeg(filename = pathnameFile)
-    plot(ditTradicionais, xlab="Distribuição", ylab="Valores", main="", verticals=TRUE, pch=46, cex.axis = 1, cex.lab=1.5, col="red", las=1)
-    lines(ditPrivacidade, verticals=TRUE, pch=46, col="khaki")
-    lines(ditSeguranca, verticals=TRUE, pch=46, col="seashell2")
-    lines(ditTodos, verticals=TRUE, pch=46, col="purple")
+  if(metric==10){
+    plot(ditTradicionais, ylab="Distribuição", xlab="Métrica AHF", verticals=TRUE, pch=46, cex.axis = 1, cex.lab=1.5, col="red", las=1)
+    lines(ditPrivacidade, verticals=TRUE, pch=45, col="khaki")
+    lines(ditSeguranca, verticals=TRUE, pch=44, col="seashell2")
+    lines(ditTodos, verticals=TRUE, pch=43, col="purple")
     legend("bottomright", legend=c("Tradicionais", "Privacidade", "Segurança", "Todos"), col=c("red", "khaki", "seashell2", "purple"), lty=1:2, cex=1.5)
-
-    if(metric==10){
-      title("(a) Métrica AHF", main = "")  
-    }
-    else if(metric==11){
-      title("(b) Métrica AIF", main = "")  
-    }
-    else if(metric==12){
-      title("(a) Métrica CF", main = "")  
-    }
-    else if(metric==13){
-      title("(b) Métrica MHF", main = "")  
-    }
-    else if(metric==14){
-      title("(a) Métrica MIF", main = "")  
-    }
-    else if(metric==15){
-      title("(b) Métrica PF", main = "")  
-    }
+  }
+  else if(metric==11){
+    plot(ditTradicionais, ylab="Distribuição", xlab="Métrica AIF", verticals=TRUE, pch=46, cex.axis = 1, cex.lab=1.5, col="red", las=1)
+    lines(ditPrivacidade, verticals=TRUE, pch=45, col="khaki")
+    lines(ditSeguranca, verticals=TRUE, pch=44, col="seashell2")
+    lines(ditTodos, verticals=TRUE, pch=43, col="purple")
+    legend("bottomright", legend=c("Tradicionais", "Privacidade", "Segurança", "Todos"), col=c("red", "khaki", "seashell2", "purple"), lty=1:2, cex=1.5)
+  }
+  else if(metric==12){
+    plot(ditTradicionais, ylab="Distribuição", xlab="Métrica CF", verticals=TRUE, pch=46, cex.axis = 1, cex.lab=1.5, col="red", las=1)
+    lines(ditPrivacidade, verticals=TRUE, pch=45, col="khaki")
+    lines(ditSeguranca, verticals=TRUE, pch=44, col="seashell2")
+    lines(ditTodos, verticals=TRUE, pch=43, col="purple")
+    legend("bottomright", legend=c("Tradicionais", "Privacidade", "Segurança", "Todos"), col=c("red", "khaki", "seashell2", "purple"), lty=1:2, cex=1.5)
+  }
+  else if(metric==13){
+    plot(ditTradicionais, ylab="Distribuição", xlab="Métrica MHF", verticals=TRUE, pch=46, cex.axis = 1, cex.lab=1.5, col="red", las=1)
+    lines(ditPrivacidade, verticals=TRUE, pch=45, col="khaki")
+    lines(ditSeguranca, verticals=TRUE, pch=44, col="seashell2")
+    lines(ditTodos, verticals=TRUE, pch=43, col="purple")
+    legend("bottomright", legend=c("Tradicionais", "Privacidade", "Segurança", "Todos"), col=c("red", "khaki", "seashell2", "purple"), lty=1:2, cex=1.5)
+  }
+  else if(metric==14){
+    plot(ditTradicionais, ylab="Distribuição", xlab="Métrica MIF", verticals=TRUE, pch=46, cex.axis = 1, cex.lab=1.5, col="red", las=1)
+    lines(ditPrivacidade, verticals=TRUE, pch=45, col="khaki")
+    lines(ditSeguranca, verticals=TRUE, pch=44, col="seashell2")
+    lines(ditTodos, verticals=TRUE, pch=43, col="purple")
+    legend("bottomright", legend=c("Tradicionais", "Privacidade", "Segurança", "Todos"), col=c("red", "khaki", "seashell2", "purple"), lty=1:2, cex=1.5)
+  }
+  else if(metric==15){
+    plot(ditTradicionais, ylab="Distribuição", xlab="Métrica PF", verticals=TRUE, pch=46, cex.axis = 1, cex.lab=1.5, col="red", las=1)
+    lines(ditPrivacidade, verticals=TRUE, pch=45, col="khaki")
+    lines(ditSeguranca, verticals=TRUE, pch=44, col="seashell2")
+    lines(ditTodos, verticals=TRUE, pch=43, col="purple")
+    legend("bottomright", legend=c("Tradicionais", "Privacidade", "Segurança", "Todos"), col=c("red", "khaki", "seashell2", "purple"), lty=1:2, cex=1.5)
+  }
   dev.off()
 }
 
 path="C:/Users/felip/Documents/TCC2/Resultados/Graficos/Distribuicao/Metricas_Estruturais/"
 
 for(metric in 16:21){
-  ditTradicionais <- ecdf(tradicionais[,metric])
-  ditPrivacidade <- ecdf(privacidade[,metric])
-  ditSeguranca <- ecdf(seguranca[,metric])
-  ditTodos <- ecdf(todos[,metric])
+  ditTradicionais <- ecdf(as.numeric(as.character(tradicionais[,metric])))
+  ditPrivacidade <- ecdf(as.character(as.numeric(privacidade[,metric])))
+  ditSeguranca <- ecdf(as.character(as.numeric(seguranca[,metric])))
+  ditTodos <- ecdf(as.character(as.numeric(todos[,metric])))
   
   nameFile = paste(resultados[1,metric], extensao)
   pathnameFile = paste(path, nameFile)
   jpeg(filename = pathnameFile)
-    plot(ditTradicionais, xlab="Distribuição", ylab="Valores", main="", verticals=TRUE, pch=46, cex.axis = 1, cex.lab=1.5, col="red", las=1)
-    lines(ditPrivacidade, verticals=TRUE, pch=46, col="khaki")
-    lines(ditSeguranca, verticals=TRUE, pch=46, col="seashell2")
-    lines(ditTodos, verticals=TRUE, pch=46, col="purple")
+  if(metric==16){
+    plot(ditTradicionais, ylab="Distribuição", xlab="Métrica CBO", verticals=TRUE, pch=46, cex.axis = 1, cex.lab=1.5, col="red", las=1)
+    lines(ditPrivacidade, verticals=TRUE, pch=45, col="khaki")
+    lines(ditSeguranca, verticals=TRUE, pch=44, col="seashell2")
+    lines(ditTodos, verticals=TRUE, pch=43, col="purple")
     legend("bottomright", legend=c("Tradicionais", "Privacidade", "Segurança", "Todos"), col=c("red", "khaki", "seashell2", "purple"), lty=1:2, cex=1.5)
-    if(metric==16){
-      title("(a) Métrica CBO", main = "")  
-    }
-    else if(metric==17){
-      title("(b) Métrica DIT", main = "")  
-    }
-    else if(metric==18){
-      title("(a) Métrica LCOM", main = "")  
-    }
-    else if(metric==19){
-      title("(b) Métrica NOC", main = "")  
-    }
-    else if(metric==20){
-      title("(a) Métrica RFC", main = "")  
-    }
-    else if(metric==21){
-      title("(b) Métrica WMC", main = "")  
-    }
+  }
+  else if(metric==17){
+    plot(ditTradicionais, ylab="Distribuição", xlab="Métrica DIT", verticals=TRUE, pch=46, cex.axis = 1, cex.lab=1.5, col="red", las=1)
+    lines(ditPrivacidade, verticals=TRUE, pch=45, col="khaki")
+    lines(ditSeguranca, verticals=TRUE, pch=44, col="seashell2")
+    lines(ditTodos, verticals=TRUE, pch=43, col="purple")
+    legend("bottomright", legend=c("Tradicionais", "Privacidade", "Segurança", "Todos"), col=c("red", "khaki", "seashell2", "purple"), lty=1:2, cex=1.5)
+  }
+  else if(metric==18){
+    plot(ditTradicionais, ylab="Distribuição", xlab="Métrica LCOM", verticals=TRUE, pch=46, cex.axis = 1, cex.lab=1.5, col="red", las=1)
+    lines(ditPrivacidade, verticals=TRUE, pch=45, col="khaki")
+    lines(ditSeguranca, verticals=TRUE, pch=44, col="seashell2")
+    lines(ditTodos, verticals=TRUE, pch=43, col="purple")
+    legend("bottomright", legend=c("Tradicionais", "Privacidade", "Segurança", "Todos"), col=c("red", "khaki", "seashell2", "purple"), lty=1:2, cex=1.5)
+  }
+  else if(metric==19){
+    plot(ditTradicionais, ylab="Distribuição", xlab="Métrica NOC", verticals=TRUE, pch=46, cex.axis = 1, cex.lab=1.5, col="red", las=1)
+    lines(ditPrivacidade, verticals=TRUE, pch=45, col="khaki")
+    lines(ditSeguranca, verticals=TRUE, pch=44, col="seashell2")
+    lines(ditTodos, verticals=TRUE, pch=43, col="purple")
+    legend("bottomright", legend=c("Tradicionais", "Privacidade", "Segurança", "Todos"), col=c("red", "khaki", "seashell2", "purple"), lty=1:2, cex=1.5)
+  }
+  else if(metric==20){
+    plot(ditTradicionais, ylab="Distribuição", xlab="Métrica RFC", verticals=TRUE, pch=46, cex.axis = 1, cex.lab=1.5, col="red", las=1)
+    lines(ditPrivacidade, verticals=TRUE, pch=45, col="khaki")
+    lines(ditSeguranca, verticals=TRUE, pch=44, col="seashell2")
+    lines(ditTodos, verticals=TRUE, pch=43, col="purple")
+    legend("bottomright", legend=c("Tradicionais", "Privacidade", "Segurança", "Todos"), col=c("red", "khaki", "seashell2", "purple"), lty=1:2, cex=1.5)
+  }
+  else if(metric==21){
+    plot(ditTradicionais, ylab="Distribuição", xlab="Métrica WMC", verticals=TRUE, pch=46, cex.axis = 1, cex.lab=1.5, col="red", las=1)
+    lines(ditPrivacidade, verticals=TRUE, pch=45, col="khaki")
+    lines(ditSeguranca, verticals=TRUE, pch=44, col="seashell2")
+    lines(ditTodos, verticals=TRUE, pch=43, col="purple")
+    legend("bottomright", legend=c("Tradicionais", "Privacidade", "Segurança", "Todos"), col=c("red", "khaki", "seashell2", "purple"), lty=1:2, cex=1.5)
+  }
   dev.off()
 }
