@@ -88,14 +88,14 @@ for(metric in 10:15){
   jpeg(filename = pathnameFile, width = 1000, height = 1000)
   par(mar=c(5.1, 5.1, 4.1, 12.5), xpd=TRUE)
   if(metric==10){
-    plot(ditTradicionais, ylab="Distribuição", xlab="Métrica AHF", col="yellow", cex.axis = 1, cex.lab=1.5, xlim = c(0, 100), las=1, main="", verticals=TRUE, do.points=FALSE)
+    plot(ditTradicionais, ylab="Distribuição", xlab="Métrica AHF", col="yellow", cex.axis = 2, cex.lab=2.5, xlim = c(0, 100), las=1, main="", verticals=TRUE, do.points=FALSE)
     lines(ditPrivacidade, col="darkblue", verticals=TRUE, do.points=FALSE)
     lines(ditSeguranca, col="azure4", verticals=TRUE, do.points=FALSE)
     lines(ditTodos, col="red", verticals=TRUE, do.points=FALSE)
     legend("topright", inset=c(-0.23,0), legend=c("Tradicionais", "Privacidade", "Segurança", "Todos"), col=c("yellow", "darkblue", "azure4", "red"), lty=1:2, cex=1.5)
   }
   else if(metric==11){
-    plot(ditTradicionais, ylab="Distribuição", xlab="Métrica AiF", col="yellow", cex.axis = 1, cex.lab=1.5, xlim = c(0, 100), las=1, main="", verticals=TRUE, do.points=FALSE)
+    plot(ditTradicionais, ylab="Distribuição", xlab="Métrica AiF", col="yellow", cex.axis = 2, cex.lab=2.5, xlim = c(0, 100), las=1, main="", verticals=TRUE, do.points=FALSE)
     lines(ditPrivacidade, col="darkblue", verticals=TRUE, do.points=FALSE)
     lines(ditSeguranca, col="azure4", verticals=TRUE, do.points=FALSE)
     lines(ditTodos, col="red", verticals=TRUE, do.points=FALSE)
@@ -109,14 +109,14 @@ for(metric in 10:15){
     legend("topright", inset=c(-0.23,0), legend=c("Tradicionais", "Privacidade", "Segurança", "Todos"), col=c("yellow", "darkblue", "azure4", "red"), lty=1:2, cex=1.5)
   }
   else if(metric==13){
-    plot(ditTradicionais, ylab="Distribuição", xlab="Métrica MHF", col="yellow", cex.axis = 1, cex.lab=1.5, xlim = c(0, 100), las=1, main="", verticals=TRUE, do.points=FALSE)
+    plot(ditTradicionais, ylab="Distribuição", xlab="Métrica MHF", col="yellow", cex.axis = 2, cex.lab=2.5, xlim = c(0, 100), las=1, main="", verticals=TRUE, do.points=FALSE)
     lines(ditPrivacidade, col="darkblue", verticals=TRUE, do.points=FALSE)
     lines(ditSeguranca, col="azure4", verticals=TRUE, do.points=FALSE)
     lines(ditTodos, col="red", verticals=TRUE, do.points=FALSE)
     legend("topright", inset=c(-0.23,0), legend=c("Tradicionais", "Privacidade", "Segurança", "Todos"), col=c("yellow", "darkblue", "azure4", "red"), lty=1:2, cex=1.5)
   }
   else if(metric==14){
-    plot(ditTradicionais, ylab="Distribuição", xlab="Métrica MIF", col="yellow", cex.axis = 1, cex.lab=1.5, xlim = c(0, 100), las=1, main="", verticals=TRUE, do.points=FALSE)
+    plot(ditTradicionais, ylab="Distribuição", xlab="Métrica MIF", col="yellow", cex.axis = 2, cex.lab=2.5, xlim = c(0, 100), las=1, main="", verticals=TRUE, do.points=FALSE)
     lines(ditPrivacidade, col="darkblue", verticals=TRUE, do.points=FALSE)
     lines(ditSeguranca, col="azure4", verticals=TRUE, do.points=FALSE)
     lines(ditTodos, col="red", verticals=TRUE, do.points=FALSE)
@@ -152,7 +152,7 @@ for(metric in 16:21){
     legend("topright", inset=c(-0.23,0), legend=c("Tradicionais", "Privacidade", "Segurança", "Todos"), col=c("yellow", "darkblue", "azure4", "red"), lty=1:2, cex=1.5)
   }
   else if(metric==17){
-    plot(ditTradicionais, ylab="Distribuição", xlab="Métrica DIT", verticals=TRUE, pch=46, cex.axis = 1, cex.lab=1.5, xlim = c(0, 5), col="yellow", las=1, main="")
+    plot(ditTradicionais, ylab="Distribuição", xlab="Métrica DIT", verticals=TRUE, pch=46, cex.axis = 2, cex.lab=2.5, xlim = c(0, 10), col="yellow", las=1, main="")
     lines(ditPrivacidade, verticals=TRUE, pch=45, col="darkblue")
     lines(ditSeguranca, verticals=TRUE, pch=44, col="azure4")
     lines(ditTodos, verticals=TRUE, pch=43, col="red")
@@ -166,22 +166,22 @@ for(metric in 16:21){
     legend("topright", inset=c(-0.23,0), legend=c("Tradicionais", "Privacidade", "Segurança", "Todos"), col=c("yellow", "darkblue", "azure4", "red"), lty=1:2, cex=1.5)
   }
   else if(metric==19){
-    plot(ditTradicionais, ylab="Distribuição", xlab="Métrica NOC", verticals=TRUE, pch=46, cex.axis = 1, cex.lab=1.5, xlim = c(0, 2), col="yellow", las=1, main="")
+    plot(ditTradicionais, ylab="Distribuição", xlab="Métrica NOC", verticals=TRUE, pch=46, cex.axis = 2, cex.lab=2.5, xlim = c(0, 15), col="yellow", las=1, main="")
     lines(ditPrivacidade, verticals=TRUE, pch=45, col="darkblue")
     lines(ditSeguranca, verticals=TRUE, pch=44, col="azure4")
     lines(ditTodos, verticals=TRUE, pch=43, col="red")
     legend("topright", inset=c(-0.23,0), legend=c("Tradicionais", "Privacidade", "Segurança", "Todos"), col=c("yellow", "darkblue", "azure4", "red"), lty=1:2, cex=1.5)
   }
   else if(metric==20){
-    plot(ditTradicionais, ylab="Distribuição", xlab="Métrica RFC", verticals=TRUE, pch=46, cex.axis = 1, cex.lab=1.5, xlim = c(0, 60), col="yellow", las=1, main="")
+    plot(ditTradicionais, ylab="Distribuição", xlab="Métrica RFC", verticals=TRUE, pch=46, cex.axis = 2, cex.lab=2.5, xlim = c(0, 60), col="yellow", las=1, main="")
     lines(ditPrivacidade, verticals=TRUE, pch=45, col="darkblue")
     lines(ditSeguranca, verticals=TRUE, pch=44, col="azure4")
     lines(ditTodos, verticals=TRUE, pch=43, col="red")
     legend("topright", inset=c(-0.23,0), legend=c("Tradicionais", "Privacidade", "Segurança", "Todos"), col=c("yellow", "darkblue", "azure4", "red"), lty=1:2, cex=1.5)
   }
   else if(metric==21){
-    plot(ditTradicionais, ylab="Distribuição", xlab="Métrica WMC", verticals=TRUE, pch=46, cex.axis = 1, cex.lab=1.5, xlim = c(0, 50), col="yellow", las=1, main="")
-    lines(ditPrivacidade, verticals=TRUE, pch=45, col="darkblue")
+    plot(ditTradicionais, ylab="Distribuição", xlab="Métrica WMC", verticals=TRUE, pch=46, cex.axis = 2, cex.lab=2.5, xlim = c(0, 50), col="yellow", las=1, main="")
+    lines(ditPrivacidade, verticals=TRUE, pch=45, col="orange")
     lines(ditSeguranca, verticals=TRUE, pch=44, col="azure4")
     lines(ditTodos, verticals=TRUE, pch=43, col="red")
     legend("topright", inset=c(-0.23,0), legend=c("Tradicionais", "Privacidade", "Segurança", "Todos"), col=c("yellow", "darkblue", "azure4", "red"), lty=1:2, cex=1.5)
