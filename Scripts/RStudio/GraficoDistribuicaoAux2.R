@@ -16,7 +16,7 @@ ditPrivacidade.ecdf <- ecdf(as.numeric(as.character(privacidade[,metric])))
 ditSeguranca.ecdf <- ecdf(as.numeric(as.character(seguranca[,metric])))
 ditTodos.ecdf <- ecdf(as.numeric(as.character(todos[,metric])))
 #plot(ditTradicionais.ecdf, verticals=TRUE, do.points=FALSE, col="yellow", ylab="Distribuição", xlab="Métrica LOC HTML",las=1, main="", xlim = c(0, 5))
-plot(ditTradicionais.ecdf, verticals=TRUE, do.points=FALSE, col="yellow", ylab="Distribuição", xlab="Métrica XML",las=1, main="")
+plot(ditTradicionais.ecdf, verticals=TRUE, do.points=FALSE, col="yellow", ylab="Distribuição", xlab="Métrica XML",las=1, main="", xlim = c(0, 40000))
 lines(ditPrivacidade.ecdf, verticals=TRUE, do.points=FALSE, col="orange");
 lines(ditSeguranca.ecdf, verticals=TRUE, do.points=FALSE, col="blue")
 lines(ditSeguranca.ecdf, verticals=TRUE, do.points=FALSE, col="red")
