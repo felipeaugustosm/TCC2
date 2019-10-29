@@ -1,0 +1,10 @@
+- Primeiro parágrafo da seção 5, não tem utilidade. VE
+- O uso de correção precisa ser explicada na seção de metodologia, inclusive explicando qual método de correção foi usado. Praticamente tudo que está no primerio parágrafo da seção 5.1 é método e não resultado
+- O titulo da tabela quebra de diversas formas o template da SBC. VE
+- Explicar na seção de medologia o que significa a distribuição acumulada e como ela é usada no trabalho
+- Agrupar os gráficos por tipo de métrica, por exemplo, colocar junto todas as ECDFs de métricas de tamanho
+
+VE= Ver exemplos
+
+
+Na tentativa de possibilitar melhor visualização das variáveis das métricas, recorreu-se aos gráficos de linhas para ilustrar a distribuição

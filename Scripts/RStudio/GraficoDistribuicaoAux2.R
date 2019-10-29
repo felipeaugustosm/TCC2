@@ -9,14 +9,14 @@ seguranca<-resultados[resultados[,22]%in%c("Seguranca"),]
 
 todos <-resultados[resultados[,22]%in%c("Todos"),]
 
-metric<-8
+metric<-17
 par(mar=c(5.1, 5.1, 4.1, 12.5), xpd=TRUE)
 ditTradicionais.ecdf <- ecdf(as.numeric(as.character(tradicionais[,metric])))
 ditPrivacidade.ecdf <- ecdf(as.numeric(as.character(privacidade[,metric])))
 ditSeguranca.ecdf <- ecdf(as.numeric(as.character(seguranca[,metric])))
 ditTodos.ecdf <- ecdf(as.numeric(as.character(todos[,metric])))
 #plot(ditTradicionais.ecdf, verticals=TRUE, do.points=FALSE, col="yellow", ylab="Distribuição", xlab="Métrica LOC HTML",las=1, main="", xlim = c(0, 5))
-plot(ditTradicionais.ecdf, verticals=TRUE, do.points=FALSE, col="yellow", ylab="Distribuição", xlab="Métrica XML",las=1, main="", xlim = c(0, 40000))
+plot(ditTradicionais.ecdf, verticals=TRUE, do.points=FALSE, col="yellow", ylab="Distribuição", xlab="(g) Métrica DIT",las=1, main="", xlim = c(0, 5))
 lines(ditPrivacidade.ecdf, verticals=TRUE, do.points=FALSE, col="orange");
 lines(ditSeguranca.ecdf, verticals=TRUE, do.points=FALSE, col="blue")
 lines(ditSeguranca.ecdf, verticals=TRUE, do.points=FALSE, col="red")
